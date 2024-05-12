@@ -1,159 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td><a href="pages/form1.html">Formulario 1</a></td>
+        <td><a href="pages/form2.html">Formulario 2</a></td>
+        <td><a href="pages/form3.html">Formulario 3</a></td>
+        <td><a href="pages/form4.html">Formulario 4</a></td>
+        <td><a href="pages/form5.html">Formulario 5</a></td>
+      </tr>
+    </table>
 
-    <form>    
-<h1>Club de la tercera edad.</h1>
-<h2>Registro</h2>
+    <form>
+      <h1>Club de la tercera edad.</h1>
+      <h2>Registro</h2>
 
-<label for="fname">Nombre </label><br>
-<input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
-<br><br>
+      <label for="fname">Nombre </label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Ingrese su nombre"
+      />
+      <br /><br />
 
-<label for="lname" >Apellidos</label><br>
-<input type="text" id="lname" name="lname" placeholder="Ingrese sus apellidos"><br><br>
+      <label for="lname">Apellidos</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Ingrese sus apellidos"
+      /><br /><br />
 
-<label for="age">Edad</label><br>
-<input type="number" id="age" name="age" placeholder="Ingrese su edad"><br>
+      <label for="age">Edad</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Ingrese su edad"
+      /><br />
 
-<p>Indique su sexo<p>
+      <p>Indique su sexo</p>
+      <p>
+        <input type="radio" id="sexType" name="sexType" value="Male" />
+        <label for="sexType">Hombre</label>
 
-<input type="radio" id="sexType" name="sexType" value="Male">
-<label for="sexType">Hombre</label> 
+        <input type="radio" id="sexType" name="sexType" value="female" />
+        <label for="sexType"> Mujer</label><br />
+        <br />
+        <label for="viejuner">Me siento viejuner:</label>
+        <input type="checkbox" id="viejuner" name="viejuner" /><br /><br />
 
-<input type="radio" id="sexType" name="sexType" value="female"> 
-<label for="sexType"> Mujer</label><br>
-<br>
-<label for="viejuner">Me siento viejuner:</label>
-<input type="checkbox" id="viejuner" name="viejuner" ><br><br>
+        <label for="description"> Escribe algo sobre ti:</label><br />
+        <textarea
+          name="description"
+          rows="5"
+          cols="30"
+          placeholder="Cuentanos un poco sobre ti..."
+        ></textarea>
+        <br /><br />
 
-<label for="description"> Escribe algo sobre ti:</label><br>
-<textarea name="description" rows="5" cols="30"  placeholder="Cuentanos un poco sobre ti..."></textarea> <br><br>
+        <label for="email">Correo electrónico:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ingrese su correo electronico"
+        />
+        <br /><br />
 
+        <label for="numberPhone">Numero de contacto</label><br />
+        <input
+          type="tel"
+          id="numberPhone"
+          name="numberPhone"
+          placeholder="Numero de contacto"
+        />
+        <br />
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+        <br />
+        <br />
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+      </p>
+    </form>
 
-<label for="email">Correo electrónico:</label><br>
-<input type="email" id="email" name="email" placeholder="Ingrese su correo electronico"> <br><br>
-
-<label for="numberPhone">Numero de contacto</label><br>
-<input type="tel" id="numberPhone" name="numberPhone" placeholder="Numero de contacto"> <br>
-<br>
-<input type="submit">
-<input type="reset">
-
-</form>
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><
-<!-- Formulario para la policia
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- Formulario para la policia
  -->
 
-<form>
-<h1>Robo de bicileta</h1>
-<label for="dateHour">Fecha y hora:</label><br>
-<input type="datetime-local"><br><br>
+    <form>
+      <h1>Robo de bicileta</h1>
+      <label for="dateHour">Fecha y hora:</label><br />
+      <input type="datetime-local" /><br /><br />
 
-<label for="colorBike">Color de la bicicleta:</label><br>
-<input type="color" id="colorBike" name="colorBike"><br><br>
+      <label for="colorBike">Color de la bicicleta:</label><br />
+      <input type="color" id="colorBike" name="colorBike" /><br /><br />
 
-<label for="priceBike">Rango de precio:</label><br>
-500€<input type="range" id="priceBike" name="priceBike"><span>15000€</span><br>
+      <label for="priceBike">Rango de precio:</label><br />
+      <span>100€</span>
+      <input
+        type="range"
+        id="priceBike"
+        name="priceBike"
+        min="100"
+        max="15000"
+      /><span>15000€</span><br /><br />
 
+      <label for="modelBike">Tipo de bicicleta:</label><br />
+      <select name="typeBike" id="modelBike">
+        <optgroup label="Paseo">
+          <option value="Señorial">Señorial</option>
+          <option value="Anti-plebeyos">Anti-plebeyos</option>
+          <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+        </optgroup>
 
+        <optgroup label="Montaña">
+          <option value="Gamusinos">Gamusinos</option>
+          <option value="Hueleflores premium">Hueleflores premium</option>
+          <option value="Fango lover">Fango lover</option>
+        </optgroup>
 
+        <optgroup label="Carreras">
+          <option value="Metroymedio">Metroymedio</option>
+          <option value="3 de la tarde (fluorescente edition)">
+            3 de la tarde (fluorescente edition)
+          </option>
+          <option value="Grupitors">Grupitors</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <label for="accessories">Accesorios:</label><br />
+      <select name="accessories" id="accessories" multiple>
+        <option value="Ruedines">Ruedines</option>
+        <option value="Pegatinas">Pegatinas</option>
+        <option value="Cestita">Cestita</option>
+        <option value="Bomba de aire">Bomba de aire</option>
+        <option value="Timbre">Timbre</option>
+        <option value="Foco">Foco</option>
+      </select>
+      <br />
+      <br />
+      <label for="accessories">¿Qué marca era?:</label><br />
+      <input list="brandsBike" />
+      <datalist id="brandsBike">
+        <option value="specialized">specialized</option>
+        <option value="trek"></option>
+        <option value="merida"></option>
+        <option value="scott"></option>
+        <option value="giant"></option>
+        <option value="cube"></option>
+      </datalist>
 
-
-
-
-
-<label for="modelBike">Tipo de bicicleta:</label><br>
-<select name="typeBike" id="modelBike">
-
-<optgroup label="Paseo">
-<option value="Señorial">Señorial</option>
-<option value="Anti-plebeyos">Anti-plebeyos</option>
-<option value="PorEncimaDelHombro">PorEncimaDelHombro</option></optgroup>
-
-<optgroup label="Montaña">
-<option value="Gamusinos">Gamusinos</option>
-<option value="Hueleflores premium">Hueleflores premium</option>
-<option value="Fango lover">Fango lover</option></optgroup>
-
-<optgroup label="Carreras">
-<option value="Metroymedio">Metroymedio</option>
-<option value="3 de la tarde (fluorescente edition)">3 de la tarde (fluorescente edition)</option>
-<option value="Grupitors">Grupitors</option>
-</optgroup>
-</select>
-<br>
-<br>
-<label for="accessories">Accesorios:</label><br>
-<select name="accessories" id="accessories" multiple>
-    <option value="Ruedines">Ruedines</option>
-    <option value="Pegatinas">Pegatinas</option>
-    <option value="Cestita">Cestita</option>
-    <option value="Bomba de aire">Bomba de aire</option>
-    <option value="Timbre">Timbre</option>
-    <option value="Foco">Foco</option>
-</select>
-<br>
-<br>
-<label for="accessories">¿Qué marca era?:</label><br>
-<input list="brandsBike">
-<datalist id="brandsBike">
-    <option value="specialized">specialized</option>
-    <option value="trek">
-    <option value="merida">
-    <option value="scott">
-    <option value="giant">
-    <option value="cube">
-</datalist>
-<br>
-<br>
-<input type="submit">
-<input type="reset">
-
-
-
-</form>
-
-</body>
+      <br />
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-<!-- <label for=""></label><br>
-<input type="" id="" name="" placeholder=""><br> -->
-
-
-
-
-
-
-
-
-
-<!-- 
-<ul>
-    <li> <a href="pages/form1.html">Formulario 1</a></li>
-    <li><a href="pages/form2.html">Formulario 2</a></li>
-    <li><a href="pages/form3.html">Formulario 3</a></li>
-    <li><a href="pages/form4.html">Formulario 4</a></li>
-    <li><a href="pages/form5.html">Formulario 5</a></li>
-</ul>
- -->
-
-

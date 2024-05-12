@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario 1</h1>
+    <table align="center">
+      <tr>
+        <td><a href="../index.html">Formulario Inicial</a></td>
+        <td><a href="pages/form2.html">Formulario 2</a></td>
+        <td><a href="pages/form3.html">Formulario 3</a></td>
+        <td><a href="pages/form4.html">Formulario 4</a></td>
+        <td><a href="pages/form5.html">Formulario 5</a></td>
+      </tr>
+    </table>
+
+    <form>
+      <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+
+        <input
+          type="radio"
+          name="assignatures"
+          id="assignatures"
+          value="language"
+        />
+        <label for="assignatures">Lengua</label>
+        <br />
+        <input
+          type="radio"
+          name="assignatures"
+          id="assignatures"
+          value="mathematics"
+        />
+        <label for="assignatures">Matematicas</label>
+        <br />
+        <input
+          type="radio"
+          name="assignatures"
+          id="assignatures"
+          value="History"
+        />
+        <label for="assignatures">Historia</label>
+        <br />
+        <input
+          type="radio"
+          name="assignatures"
+          id="assignatures"
+          value="Geography"
+        />
+        <label for="assignatures">Geografia</label>
+        <br />
+
+        <label for="assignatures">Accesorios:</label><br />
+        <select name="assignatures" id="assignatures" multiple>
+          <option value="language">Lengua</option>
+          <option value="mathematics">Matematicas</option>
+          <option value="History">Historia</option>
+          <option value="Geography">Geografia</option></select
+        ><br /><br />
+
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color" /><br /><br />
+
+        <label for="instituto">Instituto</label>
+        <input type="text" id="instituto" name="instituto" />
+
+        <label for="estudios">Estudios elegidos</label>
+        <input type="text" id="estudios" name="estudios" /><br /><br />
+
+        <label for="fichero">Elija un fichero</label>
+        <input type="file" id="fichero" name="fichero" /><br /><br />
+
+        <input type="checkbox" name="dia" value="dialunes" />
+        <label for="dia">Lunes</label>
+        <br />
+        <input type="checkbox" name="dia" value="diamartes" />
+        <label for="dia">Martes</label>
+        <br />
+        <input type="checkbox" name="dia" value="diamiercoles" />
+        <label for="dia">Miercoles</label>
+        <br />
+        <input type="checkbox" name="dia" value="diajueves" />
+        <label for="dia">Jueves</label>
+        <br />
+        <input type="checkbox" name="dia" value="diasabado" />
+        <label for="dia">Sabado</label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Por favor, complete estas opciones</legend>
+
+        <label for="description"></label>
+        <textarea
+          name="description"
+          rows="6"
+          cols="45"
+          placeholder="Utilice este recuadro por favor"
+        ></textarea>
+        <br /><br />
+
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color" /><br /><br />
+
+        <input type="radio" name="lenguaje" value="lenguajeJava" />
+        <label for="lenguaje">Java</label>
+        <br />
+        <input type="radio" name="lenguaje" value="lenguajePython" />
+        <label for="lenguaje">Python</label>
+        <br />
+        <input type="radio" name="lenguaje" value="lenguajeHtml" />
+        <label for="lenguaje">HTML</label>
+        <br />
+        <input type="radio" name="lenguaje" value="lenguajevisual_basic" />
+        <label for="lenguaje">Visual Basic</label>
+        <br />
+        <input type="radio" name="lenguaje" value="lenguajeCss" />
+        <label for="lenguaje">CSS</label>
+        <br /><br />
+        <label for="nombre">Nombre</label><br />
+        <textarea
+          name="nomre"
+          rows="1"
+          cols="20"
+          placeholder="Nombre"
+        ></textarea>
+        <br /><br />
+        <label for="apellidos">Apellidos</label><br />
+        <textarea
+          name="apellidos"
+          rows="1"
+          cols="20"
+          placeholder="Apellidos"
+        ></textarea>
+        <br /><br />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" placeholder="Correo electronico" />
+        <br /><br />
+        <label for="telefono">Telefono</label><br />
+        <input
+          type="tel"
+          id="telefono"
+          pattern="[0-9]{11}"
+          placeholder="Telefono"
+        />
+
+        <br />
+        <br />
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

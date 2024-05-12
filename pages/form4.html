@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario 4</h1>
+    <table align="center">
+      <tr>
+        <td><a href="../index.html">Formulario Inicial</a></td>
+        <td><a href="pages/form1.html">Formulario 1</a></td>
+        <td><a href="pages/form2.html">Formulario 2</a></td>
+        <td><a href="pages/form3.html">Formulario 3</a></td>
+        <td><a href="pages/form5.html">Formulario 5</a></td>
+      </tr>
+    </table>
+
+    <form>
+      <fieldset>
+        <legend>Preferencias</legend>
+
+        <input type="checkbox" name="asignatura" value="asignaturaGeografia" />
+        <label for="asignatura">Geografia</label>
+
+        <input type="checkbox" name="asignatura" value="asignaturaLengua" />
+        <label for="asignatura">Lengua</label>
+
+        <input
+          type="checkbox"
+          name="asignatura"
+          value="asignaturaMatematicas"
+        />
+        <label for="asignatura">Matematicas</label>
+
+        <input type="checkbox" name="asignatura" value="asignaturaHistoria" />
+        <label for="asignatura">Historia</label>
+        <br />
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          rows="8"
+          cols="56"
+          placeholder="Escriba aqui, por favor"
+        ></textarea>
+        <br />
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+        <br />
+        <label for="fecha">Elija una fecha</label>
+        <input type="date" name="fecha" />
+        <br />
+        <label for="color">Elija un color</label>
+        <input type="color" name="color" />
+        <br />
+        <label for="hora">Elija una hora</label>
+        <input type="time" name="hora" />
+        <br />
+        <select name="velocida">
+          <option value="100_mbits">100 Mbits</option>
+          <option value="1000_mbits">1000 Mbits</option>
+        </select>
+        <br />
+        <input type="radio" name="lenguaje" value="lenguajePython" />
+        <label for="lenguaje">Python</label>
+
+        <input type="radio" name="lenguaje" value="lenguajeHtml" />
+        <label for="lenguaje">HTML</label>
+
+        <input type="radio" name="lenguaje" value="lenguajeVisual_Basic" />
+        <label for="lenguaje">Visual Basic</label>
+
+        <input type="radio" name="lenguaje" value="lenguajeJava" />
+        <label for="lenguaje">Java</label>
+        <br />
+        <label for="fichero">Elija un fichero</label>
+        <input type="file" name="fichero" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+
+        <input type="radio" name="hadware" value="hadwareTarjeta_aceleradora" />
+        <label for="hadware">Tarjeta aceleradora</label>
+        <br />
+        <input type="radio" name="hadware" value="hadwareMonitor_Led" />
+        <label for="hadware">Monitor LED</label>
+        <br />
+        <input type="radio" name="hadware" value="hadwareSdd" />
+        <label for="hadware">SSD</label>
+        <br />
+        <br />
+        <label for="dni2">DNI</label>
+        <input type="text" name="dni2" />
+
+        <label for="nombre2">Nombre</label>
+        <input type="text" name="nombre2" />
+
+        <label for="apellidos2">Apellidos</label>
+        <input type="text" name="apellidos2" />
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" />
+        <br />
+        <label for="color2">Elija un color</label>
+        <input type="color" name="color2" />
+        <br />
+        <input
+          type="checkbox"
+          name="asignatura"
+          value="asignaturaMatematicas2"
+        />
+        <label for="asignatura">Matematicas</label>
+        <br />
+        <input type="checkbox" name="asignatura" value="asignaturaHistoria2" />
+        <label for="asignatura">Historia</label>
+        <br />
+        <input type="checkbox" name="asignatura" value="asignaturaGeografia2" />
+        <label for="asignatura">Geografia</label>
+        <br />
+        <input type="checkbox" name="asignatura" value="asignaturaLengua2" />
+        <label for="asignatura">Lengua</label>
+        <br />
+        <label for="fichero2">Elija un fichero</label>
+        <input type="file" name="fichero2" />
+        <br />
+        <textarea
+          name="mensaje2"
+          id="mensaje2"
+          rows="7"
+          cols="57"
+          placeholder="Escriba aqui, por favor"
+        ></textarea>
+        <br />
+        <label for="hora2">Elija una hora</label>
+        <input type="time" name="hora2" id="hora2" />
+        <br />
+        <select name="lenguaje" id="lenguaje">
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="html">HTML</option>
+          <option value="visual_basic">Visual Basic</option>
+        </select>
+      </fieldset>
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

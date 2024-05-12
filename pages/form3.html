@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario 3</h1>
+    <table align="center">
+      <tr>
+        <td><a href="../index.html">Formulario Inicial</a></td>
+        <td><a href="pages/form1.html">Formulario 1</a></td>
+        <td><a href="pages/form2.html">Formulario 2</a></td>
+        <td><a href="pages/form4.html">Formulario 4</a></td>
+        <td><a href="pages/form5.html">Formulario 5</a></td>
+      </tr>
+    </table>
+
+    <form>
+      <fieldset>
+        <legend>Opciones</legend>
+
+        <input type="radio" name="conexion" value="conexionWifi" />
+        <label for="conexion">Wifi</label>
+
+        <input type="radio" name="conexion" value="conexionCable" />
+        <label for="conexion">Cable</label>
+
+        <input type="radio" name="conexion" value="conexionFibra" />
+        <label for="conexion">Fibra</label>
+        <br />
+        <label for="hora">Elija una hora:</label>
+        <input type="time" name="hora" />
+        <br />
+        <label for="ficheros">Elija un fichero:</label>
+        <input type="file" name="ficheros" />
+        <br />
+        <select name="preferencia">
+          <option value="ciencias">Ciencias</option>
+          <option value="letras">Letras</option>
+        </select>
+        <br />
+        <textarea
+          name="entradaTexto"
+          rows="8"
+          cols="45"
+          placeholder="Escriba aqui, por favor"
+        ></textarea>
+        <br />
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" name="fecha" />
+        <br />
+
+        <input type="checkbox" name="conector" value="conectorUsb" />
+        <label for="conector">USB</label>
+
+        <input type="checkbox" name="conector" value="conectorParalelo" />
+        <label for="conector">Paralelo</label>
+
+        <input type="checkbox" name="conector" value="conectorPs2" />
+        <label for="conector">PS2</label>
+        <br />
+        <br />
+        <label for="instituto">Instituto</label>
+        <input type="text" name="instituto" />
+
+        <label for="estudios">Estudios Elegidos</label>
+        <input type="text" name="estudios" />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+
+        <br />
+        <label for="color">Elija un color:</label>
+        <input type="color" name="color" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Por favor, complete estas opciones</legend>
+
+        <label for="color2">Elija un color:</label>
+        <input type="color" name="color2" />
+        <br />
+        <br />
+        <input type="radio" name="procesador" value="procesadorIntel" />
+        <label for="procesador">Intel</label>
+        <br />
+        <input type="radio" name="procesador" value="procesadorAmd" />
+        <label for="procesador">AMD</label>
+        <br />
+        <label for="hora2">Elija una hora</label>
+        <input type="time" name="hora2" />
+        <br />
+        <label for="ficheros2">Elija un fichero</label>
+        <input type="file" name="ficheros2" />
+        <br />
+        <select name="idioma" id="idoma">
+          <option value="ingles">Ingles</option>
+          <option value="aleman">Aleman</option>
+          <option value="frances">Frances</option>
+        </select>
+        <br />
+        <label for="nombre2">Nombre</label>
+        <input type="text" name="nombre2" />
+
+        <label for="apellidos2">Apellidos</label>
+        <input type="text" name="apellidos2" />
+        <br />
+        <input type="checkbox" name="provincia" value="provinciaAlbacete" />
+        <label for="">Albacete</label>
+
+        <input type="checkbox" name="provincia" value="provinciaCiudad_Real" />
+        <label for="">Ciudad Real</label>
+
+        <input type="checkbox" name="provincia" value="provinciaCuenca" />
+        <label for="">Cuenca</label>
+
+        <input type="checkbox" name="provincia" value="provinciaGuadalajara" />
+        <label for="">Guadalajara</label>
+
+        <input type="checkbox" name="provincia" value="provinciaToledo" />
+        <label for="">Toledo</label>
+        <br />
+        <br />
+        <label for="fecha2">Elija una fecha:</label>
+        <input type="date" name="fecha2" />
+        <br />
+        <textarea
+          name="entradaTexto2"
+          rows="8"
+          cols="49"
+          placeholder="Utilice este cuadro para escribir"
+        ></textarea>
+      </fieldset>
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
